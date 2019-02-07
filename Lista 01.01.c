@@ -1,9 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
+#include <time.h>
+
+/*
+Suponha que existam 02 vetores A e B do tipo inteiro com 25 elementos inteiros
+cada. Elabore um algoritmo que construa um vetor C a partir da junção de A e B. A
+seguir efetue uma pesquisa sequencial no vetor no vetor C.
+*/
 
 int main()
 {
     int a[25],b[25],c[50],aux,i,indexrandomico,flag;
+    srand(time(0));
     
     for (i=0; i<25; i++){
     a[i] = i;
